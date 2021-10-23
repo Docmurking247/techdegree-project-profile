@@ -74,6 +74,16 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
+#classes-header {
+  text-align: center;
+  background: url('images/');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  padding-top: 60px;
+}
 header {
   line-height: 1.5;
 }
