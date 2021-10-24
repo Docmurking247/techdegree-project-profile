@@ -1,8 +1,9 @@
 /* Global Layout Set-up */
-* { 
+* {
+  margin: 0;
+  padding: 0; 
   box-sizing: border-box;
 }
-  
 body {
   margin: 0;
   padding: 0;
@@ -39,7 +40,6 @@ nav {
   margin: 0 auto;
   padding: 0;
 }
-
 .nav-content .name {
     display: block;
     margin-right: auto;
@@ -54,7 +54,6 @@ nav {
 .nav-content a:hover {
   color: white
 }
-
 header {
   text-align: center;
   background: url('images/arts-district-downtown.jpg');
@@ -64,7 +63,6 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
-
 #experience-header {
   text-align: center;
   background: url('images/warehouse.jpg');
@@ -74,15 +72,18 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
-
 #classes-header {
   text-align: center;
-  background: url('images/');
+  background: url('images/laptop-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
   padding-top: 60px;
+}
+.main-wrapper img {
+  border-radius: 50%;
+  border: 2px solid gold;
 }
 header {
   line-height: 1.5;
@@ -99,8 +100,8 @@ header .profile-image:hover {
   transform: scale(1.3) rotate(5deg);
 }
 .intro {
-  background-color: navy;
-  color: #f7f5f0;
+  background-color: blue;
+  color: whitesmoke;
   padding: 12px;
   border: 2px solid white;
   border-radius: 5px;
@@ -108,9 +109,10 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 .origin {
-  background-color: darkgreen;
+  background-color: green;
   color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -126,21 +128,22 @@ header .profile-image:hover {
   background-color: green;
   color: yellow;
 }
-
+#character {
+  display: inline-block;
+  max-width: 400px;
+  max-height: 300px;
+}
 h2 {
   text-decoration: underline;
   }
-
   p {
     font-style: italic;
     font-weight: 500;
   }
-
 ul.skills {
   padding: 0;
   text-align: center;
 }
-
 .skills li {
   border-radius: 6px;
   display: inline-block;
@@ -154,27 +157,72 @@ ul.skills {
   background: navy;
 }
 
+/* 3rd page */
+.main-wrapper{
+  display: inline-block;
+}
+.main-content {
+  background-image: url(images/tablet-workstation.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid grey;
+  height: fit-content;
+  width: fit-content;
+}
+#team {
+  margin: auto;
+  width: 37%;
+  float: left;
+}
+.signUp {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgray;
+  max-height: 300px;
+  width: 300px;
+}
+.signup-content {
+  height: fit-content;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.signUp-background {
+  background-image: url(images/bitcoin.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  margin: 30px;
+  max-height: 90vh;
+}
+.message{
+  clear: both;
+  padding: 20px;
+  font-style: italic;
+  color: white;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
 }
-
 footer .copyright {
   top: -8px;
   font-size: .75em;
 }
-
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 footer ul li {
   display: inline-block;
 }
-
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -212,30 +260,23 @@ a.social:hover {
       justify-content: space-around;
       margin: 0 auto;
   }
-
   header {
     min-height: 470px;
   }
-
   .nav {
     max-width: 1200px;
     padding: 0 30px;
   }
-
-
   main {
     padding-top: 20px;
   }
-
   main p {
     line-height: 1.6em;
   }
-
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
-
 }
 
